@@ -4,7 +4,7 @@ class ClientService {
         return res.rows;
     }
 
-   async creats(dados){
+   async create(dados){
     const res = await Pool.query("INSERT INTO ... RETURNING*", [dados]);
     return res.rows(0);
    }
